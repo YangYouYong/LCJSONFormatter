@@ -10,6 +10,8 @@ LCJSONFormatter is a Xcode Plugin for [Argo](https://github.com/thoughtbot/Argo)
 
 Developed and tested against Xcode 7. 
 
+## Update Argo to JSONAbleType
+
 
 
 ## How do I use it?
