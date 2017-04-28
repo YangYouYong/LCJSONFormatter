@@ -20,4 +20,8 @@
 
 #define headerFuncStr @"\nstruct %@: Decodable { \n %@ \n\n    static func decode(json: JSON) -> Decoded<%@> {\n          return curry(self.init)%@\n     }\n}\n "
 
+#define decodeFuncStr @"\nfinal class %@: NSObject, JSONAbleType { \n %@ \n %@\n\n    static func fromJSON(_ json: [String : AnyObject]) -> %@ {\n\n        let json = JSON(json)%@\n %@\n    }\n}\n "
+
+#define initFunc @"init(%@){\n %@ \n}"
+
 #endif /* PrefixHeader_pch */
